@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<div>
+	<h3>Single Select</h3>
+	<input id="select_single" />
+	<br />
+	<h3>Multi Select</h3>
+	<input id="select_multi" />
+</div>
+
+<style>
+body {
+	font-family: sans-serif;
+	color: rgb(53, 66, 79);
+}
+
+input, select, textarea {
+	border-radius: 4px;
+	border: solid 1px lightgray;
+	padding: 5px;
+}
+</style>
+
+<link rel="stylesheet" href="../bzSelect/bzSelect.css" type="text/css"/>
+
+<!-- <script src="../bzSelect/bzSelect.js" type="module" ></script> -->
+<script src="./MOCK_DATA.js" type="text/javascript" ></script>
+<script type="module">
+import {bzSelect} from "../bzSelect/bzSelect.js" 
+const singelSelect = bzSelect(select_single, MOCK_DATA);
+
+// singelSelect.setSelectOptions([{ value: 1 }, { name: "Two", value: "2" }, { name: "Three", value: "3" }]);
+
+singelSelect.setValue(1);
+const multiSelect = bzSelect(
+	select_multi,
+	MOCK_DATA,
+	{ multiSelect: true, withFilter: true, limitOptions:10 }
+);
+multiSelect.setValues(["2", "1"]);
+</script>
