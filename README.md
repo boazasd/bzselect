@@ -1,2 +1,2 @@
 # bzSelect #
-## Simple, tiny select for vanilla javascript ##
+ Simple, tiny select for vanilla javascript 
