@@ -1,0 +1,13 @@
+{
+  "name": "bzselect",
+  "version": "0.1.0",
+  "description": "Minimalistic select for vanilla javascript, tiny, simple, 0 dependencies",
+  "keywords": [
+    "javascript",
+    "html",
+    "select",
+    "ui"
+  ],
+  "author": "Boaz Cohen",
+  "license": "ISC"
+}
