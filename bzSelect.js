@@ -1,6 +1,5 @@
 "use strict";
-import "./bzSelect.css"
-const bzSelect = function (
+window.bzSelect = function (
 	$elm,
 	selectOptions = [],
 	{ multiSelect = false, maxSelectedToShow = 3, withFilter = false, limitOptions = 0, initialValue } = {}
@@ -136,4 +135,3 @@ const bzSelect = function (
 
 	return { openDropDown, closeDropDown, setSelectOptions, setValue, setValues, destroy };
 };
-export default bzSelect

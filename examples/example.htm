@@ -21,12 +21,14 @@ input, select, textarea {
 }
 </style>
 
-<link rel="stylesheet" href="../bzSelect/bzSelect.css" type="text/css"/>
+<link rel="stylesheet" href="../dist/bzSelect.min.css" type="text/css"/>
 
-<!-- <script src="../bzSelect/bzSelect.js" type="module" ></script> -->
+<script src="../dist/bzSelect.min.js" type="text/javascript" ></script>
 <script src="./MOCK_DATA.js" type="text/javascript" ></script>
-<script type="module">
-import {bzSelect} from "../bzSelect/bzSelect.js" 
+<script>
+// import * as a from "../dist/bzSelect.js" 
+// bzSelect = require("../dist/bzSelect.js")
+console.log(bzSelect)
 const singelSelect = bzSelect(select_single, MOCK_DATA);
 
 // singelSelect.setSelectOptions([{ value: 1 }, { name: "Two", value: "2" }, { name: "Three", value: "3" }]);
